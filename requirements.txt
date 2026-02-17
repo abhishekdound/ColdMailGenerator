@@ -5,4 +5,5 @@ langchain-community==0.2.12
 langchain-groq==0.1.9
 streamlit==1.35.0
 python-dotenv==1.0.0
-pandas==2.0.2
+pandas==2.2.3
+setuptools>=70.0.0
