@@ -8,15 +8,15 @@ class Portfolio:
     def __init__(self, file_path="resource/my_portfolio.csv"):
         self.file_path = file_path
         self.data = pd.read_csv(file_path)
-        self.chroma_client = chromadb.PersistentClient(
-                                        path="vectorstore",
-                                        settings=Settings(
-                                        anonymized_telemetry=False,
-                                        allow_reset=True,
-                                        is_persistent=True,
-                                        chroma_api_impl="chromadb.api.segment.SegmentAPI"
-                                    )
-                                )
+
+        self.chroma_client = chromadb.Client(
+            Settings(
+                anonymized_telemetry=False,
+                allow_reset=True,
+                is_persistent=True,
+                persist_directory="vectorstore"
+            )
+        )
         self.collection = self.chroma_client.get_or_create_collection(name="portfolio")
 
     def load_portfolio(self):
