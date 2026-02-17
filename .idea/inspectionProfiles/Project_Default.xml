@@ -1,0 +1,41 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="langchain-openai" />
+          <option value="langchain-ollama" />
+          <option value="jaraco.collections" />
+          <option value="langchain-huggingface" />
+          <option value="pip-chill" />
+          <option value="platformdirs" />
+          <option value="tomli" />
+          <option value="langchain" />
+          <option value="langchain-core" />
+          <option value="langchain-community" />
+          <option value="langchain-experimental" />
+          <option value="sentence-transformers" />
+          <option value="chromadb" />
+          <option value="faiss-cpu" />
+          <option value="tiktoken" />
+          <option value="streamlit" />
+          <option value="python-dotenv" />
+          <option value="mysql-connector-python" />
+          <option value="pymysql" />
+          <option value="protobuf" />
+          <option value="httptools" />
+          <option value="langchain-google-genai" />
+          <option value="watchfiles" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyStubPackagesAdvertiser" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <list>
+          <option value="pandas" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
